@@ -20,11 +20,16 @@ run ./start.sh at terminal or pip install -r requirements.txt
 
 ### Development Environment:
 I developed the project locally as described below:
-    • Spark 2.4.5 
-      (version 2.4.3 and kafka_2.11_2.3.0 gave me error with trigger.processingTime=5 or “5 SECONDS”, that I couldn’t resolve it (could be due my local environment with other programs installed))
+    • Spark 2.4.5 (version 2.4.3 and kafka_2.11_2.3.0 gave me error with trigger.processingTime=5 or “5 SECONDS”, that I couldn’t resolve 
+      
+it (could be due my local environment with other programs installed))
+
     • Scala 2.12 (instead of 2.11)
+    
     • Java 1.8.x
+    
     • Kafka build with Scala 2.12 version 2.3
+    
     • Python 3.7.4
 
 ### Python code files:
