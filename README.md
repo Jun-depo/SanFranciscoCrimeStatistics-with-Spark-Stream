@@ -40,13 +40,16 @@ Other programs:
 KafkaProducer can be used to send message to a topic. 
 
 (2) kafka_server.py
-Use KafkaProducer to produce data into a Kafka topic (“sf.crimes”) from the data source (police-department-calls-for-service.json).
+
+KafkaProducer was used to produce data into a Kafka topic (“sf.crimes”) from the data source (police-department-calls-for-service.json).
 
 (3) data_stream.py
-Use Spark as stream consumer to ingest data stream from Kafka topic (“sf.crimes”), then export intermediate Spark stream and aggregate data to produce stream (with writestream) to kafka data sink.
+
+Spark was used as stream consumer to ingest data stream from Kafka topic (“sf.crimes”), then export intermediate Spark stream and aggregate data to produce stream (with writestream) to kafka data sink.
 
 (4) consumer_server.py
-Use confluent_kafka Consumer to check if messages were produced into “sf.crimes” topic by the KafkaProducer.
+
+confluent_kafka Consumer was used to check if messages were produced into “sf.crimes” topic by the KafkaProducer.
 
 ### Run the code:
 
@@ -79,11 +82,13 @@ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.0 --maste
 (6) Spark Web UI:
 
 IP-address:4040
+
 4040 is the default port.  It can be configured to use other ports.  
 
 <img src="./images/job2.png" style="width:1000px;height:220px;">
 
 ### 1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
+
 Increasing “maxOffsetsPerTrigger” can increase “processedRowsPerSecond”.
 
 Decreasing trigger.processingTime can decrease latency between “Executor driver added” and start of execution (see below).
