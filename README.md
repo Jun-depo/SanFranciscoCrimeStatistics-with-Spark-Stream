@@ -93,6 +93,8 @@ Increasing “maxOffsetsPerTrigger” can increase “processedRowsPerSecond”.
 
 Decreasing trigger.processingTime can decrease latency between “Executor driver added” and start of execution (see below).
 
+I also experimented to change 'spark.executor.memory', from '1g' to '3g' and/or change 'spark.driver.memory' from '1g' to '3g', that only slightly affected “processedRowsPerSecond” and latency at my local environment and the conditions.
+
 ### 2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
 
 #### (1) Changing “maxOffsetsPerTrigger” seems to efficient SparkSession property
