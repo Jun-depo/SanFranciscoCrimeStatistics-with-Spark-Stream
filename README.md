@@ -2,7 +2,8 @@
 
 The San Francisco Crime data was (or are being) collected as a json log file. The goal of project was to use Spark Structured Stream, process data as live stream and then export an aggregate new stream that can be used for  live analytics.  I used Kafka producer to produce streaming data.  Instead of using Kafka consumer to process data, I used Spark to consume and process data because Spark RDD based structure that is fault tolerance, distributed and partitioned.  Spark also comes with SQL and streaming functionalities to process and aggregate streaming data.  The resulting aggregated stream can provide insights from the data.  In this case, we aggregate data by counting number of crimes in different categories of crimes.  
 
-<img align = "left" src="./images/image4.png" style="width:300px;height:420px;">
+<img src="./images/image4.png" style="width:300px;height:420px;">
+
 
 ### Dataset:
 
