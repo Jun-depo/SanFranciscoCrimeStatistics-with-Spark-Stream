@@ -97,7 +97,7 @@ I also experimented to change 'spark.executor.memory', from '1g' to '3g' and/or 
 
 ### 2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
 
-#### (1) Changing “maxOffsetsPerTrigger” seems to efficient SparkSession property
+#### (1) Changing “maxOffsetsPerTrigger” to get more efficient SparkSession property
       
 with maxRatePerPartition = 20
 
